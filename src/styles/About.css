@@ -1,0 +1,20 @@
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:black;
+    color: whitesmoke;
+    animation: landingAnimation 1.5s 1 ease-in ;
+    transition: all .3s ease-in;
+  }
+  
+  
+  @keyframes landingAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+  

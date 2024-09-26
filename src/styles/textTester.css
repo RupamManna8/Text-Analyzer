@@ -1,0 +1,406 @@
+
+.container{
+    position: relative;
+    top:30px;
+    height: 800px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    gap: 40px;
+
+}
+
+.main{
+    position: relative;
+    height:600px;
+    width: max-content;
+    padding: 50px;
+    background-color: rgba(36, 35, 35, 0.467);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: landingAnimation 1.5s 1 ease-in ;
+    transition: all .3s ease-in;
+    opacity: 1;
+    
+    /* align-items: center;  */
+}
+
+@keyframes landingAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+.counter{  position: relative;
+   
+    
+    margin-top: 10px;
+    color: whitesmoke;
+}
+#inputText{
+    border: none;
+    height: 150px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    background-color: rgba(241, 241, 236, 0.934);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.562),-2px -2px 15px rgba(234, 234, 234, 0.359);
+    background-color: black;
+    color: white;
+    resize: none;
+}
+#inputText:focus{
+    outline: none;
+    border: none;
+}
+.Button{
+    min-height: 40px;
+    width: max-content;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(16, 33, 53);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.562),-2px -2px 8px rgba(234, 234, 234, 0.359);
+    color: white;
+    border: none;
+    padding: 5px;
+   
+}
+.Button:hover{
+    scale: .9;
+    transition: all .2s ease-in;
+}
+.FontSelection{
+   text-align: center;
+    -webkit-appearance: none; /* Remove default arrow in Chrome/Safari */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    appearance: none; /* Remove default arrow in other browsers */
+    background-image: none; 
+    height: 40px;
+
+    width: 100px;
+    border-radius: 15px;
+    border: none;
+    background-color:rgb(16, 33, 53);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.562),-2px -2px 8px rgba(234, 234, 234, 0.359);
+    color: white;
+    border: none;
+}
+#imageFile{
+    text-align: center;
+    opacity: 0;
+    
+}
+.FontSelection:hover{
+    scale: 0.9;
+}
+
+.preview-text{
+   
+    border: none;
+    background: transparent;
+    color: white;
+    height: 200px;
+    width: 600px;
+    resize: none;
+
+}
+.preview-text:focus{
+    outline: none;
+    border: none;
+}
+.image{
+    
+   position: absolute;
+    top: 30px;
+    left: 340px;
+    height: 40px;
+    width: 94.5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: whitesmoke;
+    background-color: rgb(37, 51, 51);
+    opacity: 1;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.562),-2px -2px 8px rgba(234, 234, 234, 0.359);
+    border-radius: 15px;
+    font-size: 14px;
+    
+}
+.image:hover{
+    scale: 1.1;
+    transition: all .3s ease-in;
+}
+.image:hover::after{
+    content: "insert image for text";
+    position: absolute;
+    top: -30px;
+    width: max-content;
+    transition: all .3s ease-in;
+}
+#imageFile{
+  width: 100px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  color: yellow;
+  height: 40px;
+}
+.voice-container{
+  
+    position: absolute;
+    top: 30px;
+    height: 40px;  
+    width:max-content;
+    display:flex;
+    justify-content: center;
+    text-align: center;   
+    display: flex;
+    left: 575px;
+    z-index: 0;
+    border-radius: 15px;
+    
+}
+.Translate-container{
+    
+    position: absolute;
+    top: 30px;
+    height: 40px;  
+    width:max-content;
+    display:flex;
+    justify-content: center;
+    text-align: center;   
+    display: flex;
+    left: 456px;
+    z-index: 0;
+    border-radius: 15px;
+}
+.voicemode-container{
+    position: absolute;
+    top: 30px;
+    height: 40px;  
+    width:max-content;
+    display:flex;
+    justify-content: center;
+    text-align: center;   
+    display: flex;
+    left: 310px;
+    gap: 10px;
+    z-index: 0;
+    border-radius: 15px;
+}
+.Btn{
+    display: flex;
+    gap: 10px;
+}
+.voice-container:hover{
+    padding: 2px;
+    background:  linear-gradient(to right, red, purple);
+    transition: all .3s ease-in;
+}
+.Translate-container:hover{
+    padding: 2px;
+    background:  linear-gradient(to right, red, purple);
+    transition: all .3s ease-in;
+}
+.Home:hover{
+    padding: 2px;
+    background:  linear-gradient(to right, red, purple);
+    transition: all .3s ease-in;
+}
+.voice,.Home{
+    height: max-content;
+     width:max-content;
+     border-radius: 15px;
+    background-size: cover;
+}
+.voicemode,.Transletor,.normalbtn{
+    height: 40px;
+    width: max-content;
+    border-radius: 15px;
+    border: none;
+    background-color:rgb(14, 31, 14);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.562),-2px -2px 8px rgba(234, 234, 234, 0.359);
+    color: white;
+    border: none;
+    z-index: 1;
+}
+.normalbtn{
+    background-color: rgb(16, 10, 33);
+}
+.btn1,.btn2{
+    height: 40px;
+    width: max-content;
+    font-size: 14px;
+    border-radius: 15px;
+    background-color: rgb(2, 38, 2);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.562),-2px -2px 8px rgba(234, 234, 234, 0.359);
+    border: none;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+.btn1:hover{
+    scale: 1.1;
+    transition: all .2s ease-in;
+}
+.btn2:hover{
+    scale: 1.1;
+    transition: all .2s ease-in;
+}
+.btn2{
+    background-color: rgb(37, 1, 1);
+
+}
+.buttons{
+    max-width: 600px;
+    position: relative;
+    top: 50px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.PreviewHeading{
+    position: relative;
+    top: 0;
+}
+.footer{
+    position: relative;
+    top: 80px;
+    font-size: 20px;
+    color: rgb(12, 15, 172);
+    
+}
+.speek-container{
+    position: absolute;
+    top: 100px;
+    display: flex;
+    gap: 20px;
+    right: 60px;
+}
+.SpeekButtons{
+    height: max-content;
+    width: max-content;
+    display: flex;
+    gap: 20px;
+}
+.voicechecker{
+    height: 40px;
+    width: max-content;
+    border-radius: 15px;
+    border: none;
+    background-color:rgb(19, 45, 35);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.562),-2px -2px 8px rgba(234, 234, 234, 0.359);
+    color: whitesmoke;
+    border: none;
+    z-index: 1;
+}
+.voicechecker:hover{
+    scale: 0.9;
+    transition: all .2s ease-in;
+}
+.voiceOptions:hover{
+    scale: 0.9;
+    transition: all .2s ease-in;
+}
+.voiceOptions{
+    width: 150px;
+    text-align: center;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color:rgb(40, 9, 52);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.562),-2px -2px 8px rgba(234, 234, 234, 0.359);
+    color: whitesmoke;
+    border: none;
+    z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 90%;
+        padding: 10px;
+        height:650px;
+        justify-content: flex-start;
+        margin-top: -80px;
+        
+    }
+    
+    #inputText{
+        width: 90%;
+        max-width: 500px;
+        margin-top: 70px;
+        margin-left: 15.5px;
+    }
+
+    .counter{
+        left: 15.8px;
+    }
+    .buttons{
+       left: 15.5px;
+       margin-top: -20px;
+    }
+    .preview-text {
+        width: 90%;
+        max-width: 500px;
+        height: 150px;
+      padding-top: 15px;
+       
+    }
+    .PreviewHeading{
+        padding: 0;
+        margin: 0;
+    }
+    .footer{
+        left: 15px;
+        margin-top: -10px;
+    }
+    .Translate-container{
+        left: 240px;
+        top: 10px;
+    }
+    .voice-container{
+        left: 140px;
+        top: 10px;
+    }
+    .image{
+        top: 10px;
+        left: 40px;
+    }
+    .Button{
+        font-size: 11px;
+    }
+    .image{
+       left: 25px;
+    }
+    .speek-container{
+       
+        top: 15px;
+       left: 25px;
+    }
+    .voiceOptions{
+     max-width: 110px;
+    }
+    .voicemode-container{
+        left: 25px;
+        top: 20px;
+    }
+    .btn1,.btn2{
+        margin-left: 0px;
+        font-size: 12px;
+        max-width: 100px;
+
+    }
+    .normalbtn{
+        font-size: 12px;
+        color: whitesmoke;
+    }
+    .image,.Translate-container,.voice-container{
+        top: 20px;
+    }
+}
