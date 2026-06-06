@@ -6,6 +6,7 @@
 *Editing texts
 *Translator 
 *Image to text
+image to text
 
 # for getting nodemodule 
 command `npm i` 
