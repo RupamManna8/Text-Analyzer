@@ -10,4 +10,5 @@ image to text
 
 # for getting nodemodule 
 command `npm i` 
-
+# to run the app
+command `npm run dev`
